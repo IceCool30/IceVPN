@@ -1,0 +1,22 @@
+# --- SECRETS: never commit these ---
+# The Outline apiUrl is a root-password-level secret. Anyone with it controls
+# your whole VPN server. Keep it out of git, always.
+*.env
+.env
+.env.*
+!.env.example
+secrets/
+api-url*.txt
+access.json
+*apiUrl*
+
+# --- Local state / logs ---
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
